@@ -1,0 +1,17 @@
+:root {
+  --background: #ff0000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.calendare i {
+  font-size: 55px;
+  color: #ffffff;
+}
+
+.calendare p {
+  color: #ffffff; 
+}
