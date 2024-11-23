@@ -1,0 +1,22 @@
+<div class="bg-light">
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
+            <h3 class="text-center mb-4">Login</h3>
+            <!-- Formulario de login -->
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="formData.email" placeholder="Digite seu email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="formData.password"  placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-primary w-100">Entrar</button>
+            </form>
+            <div class="text-center mt-3">
+                <a routerLink="/dashboard" class="text-muted">Esqueceu a senha?</a>
+            </div>
+        </div>
+    </div>
+</div>
