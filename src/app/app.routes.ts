@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 export const routes: Routes = [
     { path: 'login', component: LoginComponent}, // Pagina Inicial
     { path: 'dashboard', component: DashboardComponent }, // Pagina da Dashboard
-    { path: '', redirectTo: 'login', pathMatch: 'full' } // Redirecionar para login
+    { path: '**', redirectTo: 'login', pathMatch: 'full' } // Redirecionar para login
 ];
 
 @NgModule({
